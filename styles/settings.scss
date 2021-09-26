@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600);
+
+// VARIABLES =========================================
+$fontfam: "San Francisco";
+$fontfamSecond: "Playfair Display";
+
+// MIXINES ===========================================
+@mixin dflex($j, $a) {
+    display: flex;
+    justify-content: $j;
+    align-items: $a;
+}
+@mixin stfont($fs, $fw, $lh) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
